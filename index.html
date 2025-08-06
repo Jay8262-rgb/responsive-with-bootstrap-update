@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .jumbotron {
+      margin-top: 60px;
+      background-color: rgb(201, 139, 68);
+      text-align: center;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      height: 70vh;
+      padding: 12vh;
+      width: 100%;
+    }
+
+    .g-4 {
+      padding: 50px;
+      width: 100%;
+    }
+
+    #container {
+      width: 100%;
+      text-align: center;
+      margin-top: 4.5rem;
+    }
+
+    #footer {
+      background-color: rgb(131, 124, 138);
+      padding: 80px 20px;
+      text-align: center;
+      margin-top: 50px;
+      font-size: larger;
+      font-weight: bold;
+      width: 100%;
+    }
+
+    .position-img {
+      display: inline-block;
+      margin: 0.5rem;
+    }
+
+    #img1 {
+      width: 40px;
+    }
+
+    #img2 {
+      width: 100px;
+      background-color: white;
+      border-radius: 7px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .jumbotron {
+        height: fit-content;
+        padding: 30px 10px;
+      }
+
+      .g-4 {
+        padding: 0px 0px 0px 25px;
+      }
+    }
+
+    .navbar {
+      background-color: rgb(171, 148, 114) !important;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .nav-link {
+      font-weight: 500;
+    }
+
+    .btn-success {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#jumbotron">App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#jumbotron">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#card-section">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Footer</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="jumbotron" id="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit to highlight featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </p>
+  </div>
+
+  <!-- Why Section -->
+  <div id="container">
+    <h2>Why This App is Awesome</h2>
+    <p>This app is important to use</p>
+  </div>
+
+  <!-- Card Section -->
+  <div class="row row-cols-1 row-cols-md-3 g-4" id="card-section">
+    <div class="col">
+      <div class="card h-100">
+        <img src="patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">This is a wider card with supporting text below.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">This card has even longer content to show equal height effect.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer" id="footer">
+    <p class="text">Download the App - Click Here 👇!</p>
+    <p>Contact 👉 <a href="tel:+4733378901" style="text-decoration: none;">+47 333 78 901</a></p>
+    <p class="position-img">
+      <a href="https://play.google.com/store/games?hl=en_IN&pli=1"><img src="logo.png" id="img1" alt="playstore"></a>
+    </p>
+    <p class="position-img">
+      <a href="https://www.apple.com/in/app-store/"><img src="apple.png" id="img2" alt="apple"></a>
+    </p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
